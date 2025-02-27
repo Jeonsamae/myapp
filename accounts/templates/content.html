@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example Content</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="#">Empower PH</a>
+      </div>
+      <ul class="navbar-menu">
+        <li class="navbar-item dropdown">
+          <a href="#">Research</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Decisions</a></li>
+            <li><a href="#">Laws</a></li>
+            <li><a href="#">Taxation</a></li>
+            <li><a href="#">Corporate</a></li>
+            <li><a href="#">Labor</a></li>
+          </ul>
+        </li>
+        <li class="navbar-item dropdown">
+          <a href="#">Law School</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Syllabus Compilation</a></li>
+            <li><a href="#">Reviewers</a></li>
+            <li><a href="#">Free Case Digests</a></li>
+            <li><a href="#">Resources</a></li>
+          </ul>
+        </li>
+        <li class="navbar-item dropdown">
+          <a href="#">2025 Lazaro-Javier Bar</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Case Digest Compilations</a></li>
+            <li><a href="#">Linked Syllabus</a></li>
+            <li><a href="#">Jzavier Doctrines</a></li>
+          </ul>
+        </li>
+        <li class="navbar-item dropdown">
+          <a href="ai">AI</a>
+        </li>
+        <li class="navbar-item dropdown">
+          <a href="#">Pricing</a>
+        </li>
+        <li class="navbar-item dropdown">
+          <a href="{% url 'logout' %}">Log Out</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
